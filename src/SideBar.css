@@ -1,0 +1,14 @@
+aside{
+    display: none;
+    background-image: linear-gradient(to right, #418595,35%, #cb86d6);
+    flex: 0.3;
+    height: 100vh;
+    border-right: solid 2px rgb(216, 204, 204);
+}
+
+@media screen and (width >= 760px){
+    aside{
+        display: flex;
+        flex-direction: column;
+    }
+}

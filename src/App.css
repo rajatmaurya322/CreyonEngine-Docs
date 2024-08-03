@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+header{
+  height: 3.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  background-color: whitesmoke;
+  flex: 1;
+  padding-left: 0.7rem;
+  border-radius: 50px;
+  margin: 0 0.6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav>div:nth-of-type(2){
+  flex: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hamburger-icon img{
+  max-width: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (width >= 760px) {
+    .hamburger-icon{
+      display: none;
+    }
+
+    nav{
+      padding-left: 0;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigator button{
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.selector select{
+  padding: 0.3rem 0.6rem;
+  max-width: 100%;
+  border: none;
+  border-radius: 5px;
 }
