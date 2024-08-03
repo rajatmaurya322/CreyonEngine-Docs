@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/CreyonEngine-Docs/static/css/main.f855e6bc.css",
-    "main.js": "/CreyonEngine-Docs/static/js/main.6701f8a6.js",
+    "main.css": "/CreyonEngine-Docs/static/css/main.c7d2fbdc.css",
+    "main.js": "/CreyonEngine-Docs/static/js/main.bfea4ad3.js",
     "static/js/453.eab57762.chunk.js": "/CreyonEngine-Docs/static/js/453.eab57762.chunk.js",
-    "static/media/logo.svg": "/CreyonEngine-Docs/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/CreyonEngine-Docs/index.html",
-    "main.f855e6bc.css.map": "/CreyonEngine-Docs/static/css/main.f855e6bc.css.map",
-    "main.6701f8a6.js.map": "/CreyonEngine-Docs/static/js/main.6701f8a6.js.map",
+    "main.c7d2fbdc.css.map": "/CreyonEngine-Docs/static/css/main.c7d2fbdc.css.map",
+    "main.bfea4ad3.js.map": "/CreyonEngine-Docs/static/js/main.bfea4ad3.js.map",
     "453.eab57762.chunk.js.map": "/CreyonEngine-Docs/static/js/453.eab57762.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.6701f8a6.js"
+    "static/css/main.c7d2fbdc.css",
+    "static/js/main.bfea4ad3.js"
   ]
 }
