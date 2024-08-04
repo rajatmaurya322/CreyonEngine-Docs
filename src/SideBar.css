@@ -10,5 +10,24 @@ aside{
     aside{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
     }
+}
+
+.hero{
+    max-width: fit-content;
+    background-color: whitesmoke;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+}
+
+.hero img{
+    width: 2rem;
+}
+
+.hero-text{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
 }

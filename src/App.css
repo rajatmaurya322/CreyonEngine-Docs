@@ -1,12 +1,14 @@
 header{
-  height: 3.5rem;
+  height: 3rem;
+  position: sticky;
+  top: 0;
 }
 
 nav{
-  background-color: whitesmoke;
+  background-color: lightgreen;
+  border: solid 1px gray;
   flex: 1;
-  padding-left: 0.7rem;
-  border-radius: 50px;
+  border-radius: 20px;
   margin: 0 0.6rem;
 }
 
@@ -14,29 +16,88 @@ nav>div:nth-of-type(2){
   flex: 1;
 }
 
+.hamburger-icon{
+  margin: 0.3rem 0 0 1rem;
+}
+
 .hamburger-icon img{
-  max-width: 2rem;
+  max-width: 1.2rem;
 }
 
 @media screen and (width >= 760px) {
     .hamburger-icon{
       display: none;
     }
-
-    nav{
-      padding-left: 0;
-    }
 }
 
 .navigator button{
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.4rem;
   border: none;
   border-radius: 5px;
+  background-color: #2898fb;
+  cursor: pointer;
 }
 
-.selector select{
+.left{
+  box-shadow: black 3px 3px;
+}
+
+.right{
+  box-shadow: black -3px 3px;
+}
+
+.left-transform{
+  transform: translateX(3px) translateY(3px);
+  box-shadow: none;
+}
+
+.right-transform{
+  transform: translateX(-3px) translateY(3px);
+  box-shadow: none;
+}
+
+.navigator>button>div{
+  display: none;
+}
+
+@media screen and (width >= 520px) {
+  .navigator>button>div{
+    display: block;
+  }
+}
+
+.navigator>button>img{
+  width: 0.8rem;
+}
+
+.selector>select{
   padding: 0.3rem 0.6rem;
   max-width: 100%;
   border: none;
   border-radius: 5px;
+  outline: none;
+  background-color: #2898fb;
+  box-shadow: black 0px 3px;
+}
+
+.selector-transform{
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+.placeholder-aside{
+  display: none;
+}
+
+@media screen and (width >=760px) {
+  .placeholder-aside{
+    display: block;
+    flex: 0.3;
+  }
+}
+
+main{
+  flex: 1;
+  margin: 0.8rem 1.8rem;
+  text-align: justify;
 }
