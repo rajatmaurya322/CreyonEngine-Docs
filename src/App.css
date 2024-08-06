@@ -1,7 +1,8 @@
 header{
-  height: 3rem;
+  height: 3.5rem;
   position: sticky;
   top: 0;
+  backdrop-filter: blur(4px);
 }
 
 nav{
@@ -18,6 +19,11 @@ nav>div:nth-of-type(2){
 
 .hamburger-icon{
   margin: 0.3rem 0 0 1rem;
+}
+
+.hamburger-transform{
+  transform: scaleX(0.8);
+  transition: all 100ms ease-out;
 }
 
 .hamburger-icon img{
@@ -99,5 +105,4 @@ nav>div:nth-of-type(2){
 main{
   flex: 1;
   margin: 0.8rem 1.8rem;
-  text-align: justify;
 }
