@@ -1,0 +1,42 @@
+.chapter-drive{
+    position: relative;
+    cursor: pointer;
+    align-self: normal;
+    margin: 0 2rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    background-image: linear-gradient(45deg,white, 10%, grey, 95%, black);
+    box-shadow: #313030 3px 3px;
+}
+
+.usb{
+    position: absolute;
+    width: 1.2rem;
+    height: 1.4rem;
+    top: 3px;
+    left: 100%;
+    box-shadow: #313030 3px 3px;
+    transform-origin: left;
+    background-image: linear-gradient(to bottom ,grey, white);
+}
+
+.usb-face{
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    right:30%;
+    top: 5px;
+    background-color: black;
+    box-shadow: black 0px 10px;
+}
+
+.chapter-drive-transform{
+    transform: translateX(13.5%);
+    transition: all 500ms;
+}
+
+.usb-transform{
+    transform: scaleX(0.2);
+    transition: all 470ms;
+    transition-delay: 75ms;
+}
