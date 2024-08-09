@@ -1,9 +1,9 @@
 aside{
     display: none;
-    background-image: linear-gradient(to right, #418595,35%, #cb86d6);
+    background-image: linear-gradient(to right, #418595,60%, #db9fe4);
     flex: 0.3;
     height: 100vh;
-    border-right: solid 2px rgb(216, 204, 204);
+    border-right: solid 2px #3f3f3f;
 }
 
 @media screen and (width >= 760px){
@@ -13,21 +13,4 @@ aside{
         align-items: center;
         justify-content: space-around;
     }
-}
-
-.hero{
-    max-width: fit-content;
-    background-color: whitesmoke;
-    padding: 0.8rem 1rem;
-    border-radius: 50%;
-}
-
-.hero img{
-    width: 2rem;
-}
-
-.hero-text{
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
 }
