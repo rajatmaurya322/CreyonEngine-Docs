@@ -51,11 +51,13 @@ function App() {
       <header className="flex-row">
         <SideBar />
         <nav className="flex-row items-center mt-05">
+          
           <div onTouchStart={addHamburgerTransform} onTouchEnd={removeHamburgerTransform}
           onMouseDown={addHamburgerTransform} onMouseUp={removeHamburgerTransform}
           className="hamburger-icon">
             <img src={hamburger} alt="hamburger.png"></img>
           </div>
+          
           <div className="flex-around items-center">
             <div className="navigator">
               <button onTouchStart={addLeftTransform} onTouchEnd={removeLeftTransform}
