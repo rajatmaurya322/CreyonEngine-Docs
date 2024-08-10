@@ -2,8 +2,6 @@ import { useState } from 'react';
 import './ChapterDrive.css'
 
 function ChapterDrive(){
-
-    const [driveState, setDriveState] = useState(false);
     
     const clickTransform = (e)=> {
         let chapterDrive = e.target;
@@ -12,7 +10,6 @@ function ChapterDrive(){
         cleanUp(activeChapterDrive);
         if(activeChapterDrive == chapterDrive) return;
         let usb = chapterDrive.querySelector(".usb");
-        setDriveState(true);
         chapterDrive.classList.add('chapter-drive-transform');
         usb.classList.add('usb-transform');
     }
