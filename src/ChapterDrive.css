@@ -18,11 +18,13 @@
     box-shadow: #313030 3px 3px;
     transform-origin: left;
     background-image: linear-gradient(to bottom ,grey, white);
+    transition-delay: 500ms;
+    transition: all 400ms;
 }
 
 .usb-face{
-    width: 0.2rem;
-    height: 0.2rem;
+    width: 3.2px;
+    height: 3.2px;
     position: absolute;
     right:30%;
     top: 5px;
@@ -31,7 +33,7 @@
 }
 
 .chapter-drive-transform{
-    transform: translateX(13.5%);
+    transform: translateX(1.8rem);
     transition: all 500ms;
 }
 

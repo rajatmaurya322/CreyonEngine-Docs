@@ -5,80 +5,33 @@ import leftarrow from "./images/left-arrow.png";
 import rightarrow from "./images/right-arrow.png";
 
 function App() {
-  const addRightTransform = ()=>{
-    const e = document.querySelector(".right");
-    e.classList.add('right-transform');
-  }
-
-  const removeRightTransform = ()=>{
-    const e = document.querySelector(".right");
-    e.classList.remove('right-transform');
-  }
-
-  const addLeftTransform = ()=>{
-    const e = document.querySelector(".left");
-    e.classList.add('left-transform');
-  }
-
-  const removeLeftTransform = ()=>{
-    const e = document.querySelector(".left");
-    e.classList.remove('left-transform');
-  }
-
-  const addSelectorTransform = ()=>{
-    const e = document.querySelector(".selector>select");
-    e.classList.add('selector-transform');
-  }
-
-  const removeSelectorTransform = ()=>{
-    const e = document.querySelector(".selector>select");
-    e.classList.remove('selector-transform');
-  }
-
-  const addHamburgerTransform = ()=>{
-    const e = document.querySelector(".hamburger-icon");
-    e.classList.add('hamburger-transform');
-  }
-
-  const removeHamburgerTransform = ()=>{
-    const e = document.querySelector(".hamburger-icon");
-    e.classList.remove('hamburger-transform');
-  }
-
-
+  
   return (
     <div className="App">
       <header className="flex-row">
         <SideBar />
         <nav className="flex-row items-center mt-05">
           
-          <div onTouchStart={addHamburgerTransform} onTouchEnd={removeHamburgerTransform}
-          onMouseDown={addHamburgerTransform} onMouseUp={removeHamburgerTransform}
-          className="hamburger-icon">
+          <div className="hamburger-icon">
             <img src={hamburger} alt="hamburger.png"></img>
           </div>
           
           <div className="flex-around items-center">
             <div className="navigator">
-              <button onTouchStart={addLeftTransform} onTouchEnd={removeLeftTransform}
-              onMouseDown={addLeftTransform} onMouseUp={removeLeftTransform}
-              className="flex-row items-center gap-05 left">
+              <button className="flex-row items-center gap-05 left">
                 <img src={leftarrow} alt="arrow-left.png"></img>
                 <div>Previous</div>
               </button>
             </div>
             <div className="selector">
-              <select onTouchStart={addSelectorTransform} onTouchEnd={removeSelectorTransform}
-              onMouseDown={addSelectorTransform} onMouseUp={removeSelectorTransform}>
+              <select>
                 <option>Asfsdfsdfsdf</option>
                 <option>A</option>
                 <option>Asfsfsdfsdfsdfsdfsdf</option>
               </select>
             </div>
             <div className="navigator">
-              <button onTouchStart={addRightTransform} onTouchEnd={removeRightTransform} 
-              onMouseDown={addRightTransform} onMouseUp={removeRightTransform} 
-              className="flex-row items-center gap-05 right">
+              <button className="flex-row items-center gap-05 right">
                 <div>Next</div>
                 <img src={rightarrow} alt="arrow-right.png"></img>
               </button>

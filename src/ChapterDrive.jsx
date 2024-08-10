@@ -5,23 +5,27 @@ function ChapterDrive(){
 
     const [driveState, setDriveState] = useState(false);
     
-    const clickTransform = ()=> {
-        let chapterDrive = document.querySelector(".chapter-drive");
-        let usb = document.querySelector(".usb");
-        if(driveState === false){
-            setDriveState(true);
-            chapterDrive.classList.add('chapter-drive-transform');
-            usb.classList.add('usb-transform');
-        }
-        else{
-            setDriveState(false);
-            chapterDrive.classList.remove('chapter-drive-transform');
-            usb.classList.remove('usb-transform');
-        }
+    const clickTransform = (e)=> {
+        let chapterDrive = e.target;
+        if(!chapterDrive.classList.contains('chapter-drive')) return;
+        const activeChapterDrive = document.querySelector('.chapter-drive-transform');
+        cleanUp(activeChapterDrive);
+        if(activeChapterDrive == chapterDrive) return;
+        let usb = chapterDrive.querySelector(".usb");
+        setDriveState(true);
+        chapterDrive.classList.add('chapter-drive-transform');
+        usb.classList.add('usb-transform');
+    }
+
+    const cleanUp = (chapterDrive)=>{
+        if(!chapterDrive) return;
+        chapterDrive.classList.remove('chapter-drive-transform');
+        let usb = chapterDrive.querySelector(".usb");
+        usb.classList.remove('usb-transform');
     }
 
     return(
-        <div onTouchStart={clickTransform} onClick={clickTransform} className='chapter-drive'>
+        <div onClick={clickTransform} className='chapter-drive'>
             abc
             <div className='usb'>
             <div className='usb-face'></div>

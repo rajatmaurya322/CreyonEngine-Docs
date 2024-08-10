@@ -5,6 +5,12 @@ function SideBar(){
     return(
         <aside>
             <ChapterDrive/>
+            <ChapterDrive/>
+            <ChapterDrive/>
+            <ChapterDrive/>
+            <ChapterDrive/>
+            <ChapterDrive/>
+            <ChapterDrive/>
         </aside>
     );
 }

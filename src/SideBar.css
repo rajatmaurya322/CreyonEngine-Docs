@@ -1,6 +1,6 @@
 aside{
     display: none;
-    background-image: linear-gradient(to right, #418595,60%, #db9fe4);
+    background-image: linear-gradient(135deg, #418595,60%, #db9fe4);
     flex: 0.3;
     height: 100vh;
     border-right: solid 2px #3f3f3f;
