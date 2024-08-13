@@ -3,8 +3,7 @@ import './SideBar.css'
 
 function SideBar(){
     return(
-        <aside>
-            <ChapterDrive/>
+        <aside className='flex-column items-center gap-3'>
             <ChapterDrive/>
             <ChapterDrive/>
             <ChapterDrive/>
