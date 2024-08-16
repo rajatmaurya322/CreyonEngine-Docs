@@ -6,7 +6,7 @@ aside{
     transform: scaleX(0);
     transform-origin: left;
     transition-duration: 300ms;
-    background-color: #8848d7;
+    background-color: cornflowerblue;
     border-right: solid 2px #3f3f3f;
     overflow-y: scroll;
     scrollbar-width: none;
