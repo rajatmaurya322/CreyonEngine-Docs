@@ -20,7 +20,8 @@ function App() {
 
   const collapseSideBar = (e)=>{
     let sidebar = document.querySelector("aside");
-    if(sideBarState && !(e.target === sidebar) && document.documentElement.clientWidth < 760){
+    if(sidebar === e.target || sidebar.contains(e.target))return;
+    if(sideBarState && document.documentElement.clientWidth < 760){
       sidebar.style.transform = 'scaleX(0)';
       setSideBarState(false);
     }
@@ -29,7 +30,7 @@ function App() {
   return (
     <div onClick={collapseSideBar} className="App">
       <header className="flex-row">
-      <div className="placeholder-aside"></div>
+        <div className="placeholder-aside"></div>
         <nav className="flex-row items-center mt-05">
           
           <div onClick={openSideBar} className="hamburger-icon">
