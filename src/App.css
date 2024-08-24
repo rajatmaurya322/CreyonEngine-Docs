@@ -2,15 +2,15 @@ header{
   height: 3.5rem;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   z-index: 0;
 }
 
 nav{
-  background-color: mediumspringgreen;
-  border: solid 1px gray;
+  background-color: mediumslateblue;
+  border: solid 1px #000000;
   flex: 1;
-  border-radius: 20px;
+  border-radius: 50px;
   margin: 0 0.6rem;
 }
 
@@ -41,7 +41,7 @@ nav>div:nth-of-type(2){
   padding: 0.3rem 0.4rem;
   border: none;
   border-radius: 5px;
-  background-color: plum;
+  background-color: #f29dc0;
   cursor: pointer;
 }
 
@@ -83,7 +83,7 @@ nav>div:nth-of-type(2){
   border: none;
   border-radius: 5px;
   outline: none;
-  background-color: plum;
+  background-color: #f29dc0 ;
   box-shadow: black 0px 3px;
 }
 
@@ -101,9 +101,4 @@ nav>div:nth-of-type(2){
     display: block;
     flex: 0.3;
   }
-}
-
-main{
-  flex: 1;
-  margin: 0.8rem 1.8rem;
 }
