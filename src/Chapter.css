@@ -1,0 +1,21 @@
+main{
+    flex: 1;
+    margin: 0.8rem 1.8rem;
+    font-family: 'Merienda';
+    font-weight: 300;
+}
+
+h1{
+    font-size: 36px;
+    margin-bottom: 0.2rem;
+}
+
+h2{
+    font-size: 32px;
+    margin-bottom: 0.2rem;
+}
+
+p{
+    font-size: 21px;
+    margin-bottom: 1rem;
+}
