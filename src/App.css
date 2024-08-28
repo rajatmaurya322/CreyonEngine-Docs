@@ -8,7 +8,7 @@ header{
 
 nav{
   background-color: mediumslateblue;
-  border: solid 1px #000000;
+  border: solid 1px #000;
   flex: 1;
   border-radius: 50px;
   margin: 0 0.6rem;
@@ -40,7 +40,7 @@ nav>div:nth-of-type(2){
 .navigator button{
   padding: 0.3rem 0.4rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #f29dc0;
   cursor: pointer;
 }
@@ -77,19 +77,12 @@ nav>div:nth-of-type(2){
   width: 0.8rem;
 }
 
-.selector>select{
-  padding: 0.3rem 0.6rem;
-  max-width: 100%;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  background-color: #f29dc0 ;
-  box-shadow: black 0px 3px;
-}
-
-.selector>select:active{
-  box-shadow: none;
-  transform: translateY(3px);
+.current-chapter{
+  background-color: #4a3e93;
+  color: white;
+  padding: 0.2rem 1.4rem 0.3rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
 .placeholder-aside{
