@@ -45,13 +45,7 @@ function App() {
                 <div>Previous</div>
               </button>
             </div>
-            <div className="selector">
-              <select>
-                <option>Asfsdfsdfsdf</option>
-                <option>A</option>
-                <option>Asfsfsdfsdfsdfsdfsdf</option>
-              </select>
-            </div>
+            <div className="current-chapter">Home</div>
             <div className="navigator">
               <button className="flex-row items-center gap-05 right">
                 <div>Next</div>
